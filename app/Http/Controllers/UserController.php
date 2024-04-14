@@ -23,6 +23,6 @@ class UserController extends Controller
             'password'=>'required',
         ]);
         User::create($validated);
-        return redirect()->route('user.create')->with('message', $message);
+
     }
 }
